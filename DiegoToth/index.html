@@ -4,16 +4,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="./assets/img/imagesLogo.jpg" type="image/x-icon">
+    <link rel="shortcut icon" href="./assets/img/download.jpg" type="image/x-icon">
     <title>Todo deportes</title>
     <!-- CSS only -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 <body class="container-fluid">
     <nav class="cont__navbar navbar navbar-expand-lg bg-light">
         <div class="container-fluid">
-        <a class="navbar-brand" href="#"><img class="w-25" src="./assets/img/download.jpg" alt=""></a>
+        <a class="navbar-brand" href="#"><img data-aos="zoom-in" class="w-25" src="./assets/img/download.jpg" alt=""></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -163,9 +164,11 @@
             <a class="enlace" href="https://d20x44kddxtp6m.cloudfront.net/wp-lanacionar/Presna_adidas/20210322/60588144c9e77c0001016ea9/t_b8ec73865a15407aa878bd42af28becf_name_ARG_MAIN_GRID_1080_X_1350/file_720x1280-2000.mp4" target="_blank"><img src="./assets/img/Camiseta-Argentina-Edicion-Especial-2022-frontal.jpg" alt="presentacion camiseta argentina"></a>
         </div>
         <section>
-            <div class="cajaMarcas">
-                <h2 class="tituloMarcas">Nuestras Marcas</h2>
-                <img class="marcas" src="./assets/img/principales-logotipos-de-marcas-ropa-conjunto-del-logo-más-popular-nike-adidas-reebok-puma-nuevo-balance-bajo-armor-cara-norte-200820258.jpg" alt="">
+            <div class="img-fluid d-flex flex-wrap justify-content-around my-2">
+                <img class="col-10" data-aos="fade-right" src="./assets/img/banner_664.jpg" alt="">
+            </div>
+            <div class="img-fluid d-flex flex-wrap justify-content-around my-2">
+                <img class="col-10" data-aos="fade-left" src="./assets/img/BANNER_L_N-RUNNING.jpg" alt="">
             </div>
         </section>
     </main>
@@ -180,18 +183,6 @@
                 <img src="./assets/img/fotoGym2.jpg" alt="">
             </div>
         </div>
-        <div>
-            <form action="" method="get">
-            <fieldset class="fieldset">
-                <div class="contenedoraEmail">
-                    <h3 class="frase">¡Recibi las mejores promociones y novedades!</h3>
-                    <div class="contenedorIngresaEmail">
-                        <input class="ingresaEmail" type="email" name="email" id="email" placeholder="ingrese su email" required>
-                        <input class="submit" type="submit" value="Suscribite">
-                    </div>
-                </div>
-            </fieldset> 
-        </div>
         <p class="pieDespedida">Gracias por tu visita!!!</p>
     </aside>
     <footer class="footer" id="Pie">
@@ -199,5 +190,9 @@
     </footer>
     <!-- JavaScript Bundle with Popper -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
 </body>
 </html>
